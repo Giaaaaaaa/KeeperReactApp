@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+  margin: 0;
 }
 
 html {
@@ -31,42 +33,43 @@ form {
     border-radius: 15px;
 }
 
-form button {
+form.create-note button {
     position: absolute;
     width: 50px;
     height: 50px;
     background-color: #1A5F7A;
     border-radius: 50%;
-    color: aliceblue;
+    color: #57C5B6;
     top:120px;
     right:45px;
     cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
     transform: scale(0.85);
 }
 
-input, textarea {
+form.create-note input, form.create-note textarea {
     width: 100%;
     display: block;
     outline: none;
     border: none;
-    padding: 15px;
+    padding: 5px;
     font-size: 20px;
     caret-color: #57C5B6;
     color: #1A5F7A;
 }
-input::placeholder, textarea::placeholder {
+form.create-note input::placeholder, form.create-note textarea::placeholder {
     color:#57C5B6;
 }
 
 
-textarea {
+form.create-note textarea {
     resize: none;
     min-height: 100px;
 }
-input {
+form.create-note input {
     min-height: 50px;
 }
 
